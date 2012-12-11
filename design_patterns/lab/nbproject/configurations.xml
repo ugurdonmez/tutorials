@@ -12,8 +12,7 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>input</itemPath>
-      <itemPath>skyline.cpp</itemPath>
+      <itemPath>lab.c</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"

@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=GNU-MacOSX
 CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-MacOSX
-CND_ARTIFACT_NAME_Debug=skylineproblem
-CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-MacOSX/skylineproblem
+CND_ARTIFACT_NAME_Debug=lab
+CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-MacOSX/lab
 CND_PACKAGE_DIR_Debug=dist/Debug/GNU-MacOSX/package
-CND_PACKAGE_NAME_Debug=skylineproblem.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/GNU-MacOSX/package/skylineproblem.tar
+CND_PACKAGE_NAME_Debug=lab.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/GNU-MacOSX/package/lab.tar
 # Release configuration
 CND_PLATFORM_Release=GNU-MacOSX
 CND_ARTIFACT_DIR_Release=dist/Release/GNU-MacOSX
-CND_ARTIFACT_NAME_Release=skylineproblem
-CND_ARTIFACT_PATH_Release=dist/Release/GNU-MacOSX/skylineproblem
+CND_ARTIFACT_NAME_Release=lab
+CND_ARTIFACT_PATH_Release=dist/Release/GNU-MacOSX/lab
 CND_PACKAGE_DIR_Release=dist/Release/GNU-MacOSX/package
-CND_PACKAGE_NAME_Release=skylineproblem.tar
-CND_PACKAGE_PATH_Release=dist/Release/GNU-MacOSX/package/skylineproblem.tar
+CND_PACKAGE_NAME_Release=lab.tar
+CND_PACKAGE_PATH_Release=dist/Release/GNU-MacOSX/package/lab.tar
 #
 # include compiler specific variables
 #
