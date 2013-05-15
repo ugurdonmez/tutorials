@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.dizaynyazilim.com.tr/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://www.dizaynyazilim.com.tr/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.dizaynyazilim.com.tr/">
+      <s:element name="GetCustomerList">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetCustomerListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCustomerListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProductList">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetProductListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProductListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCustomerData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="aProduct" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="aCustomer" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCustomerDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCustomerDataResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProductData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="aProduct" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProductDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProductDataResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInvoice">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ainvNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="aCustomer" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInvoiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetInvoiceResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetWaybill">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="aficheNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="aCustomer" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWaybillResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetWaybillResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveInvoice">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InvoiceNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ProductID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="TotalKg" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="WeigherThreshold" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Tare" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ProductPrice" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="LP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IrsaliyeNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="KantarFisiNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SevkiyatYeri" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OperatorAdi" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="dtGirisZamani" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="dtCikisZamani" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveInvoiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SaveInvoiceResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveWaybill">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProductID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="TotalKg" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="WeigherThreshold" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Tare" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ProductPrice" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="LP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IrsaliyeNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="KantarFisiNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SevkiyatYeri" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OperatorAdi" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="dtGirisZamani" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="dtCikisZamani" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveWaybillResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SaveWaybillResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetCustomerListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCustomerList" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCustomerListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProductListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProductList" />
+  </wsdl:message>
+  <wsdl:message name="GetProductListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProductListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCustomerData" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCustomerDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProductDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProductData" />
+  </wsdl:message>
+  <wsdl:message name="GetProductDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProductDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetInvoiceSoapIn">
+    <wsdl:part name="parameters" element="tns:GetInvoice" />
+  </wsdl:message>
+  <wsdl:message name="GetInvoiceSoapOut">
+    <wsdl:part name="parameters" element="tns:GetInvoiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetWaybillSoapIn">
+    <wsdl:part name="parameters" element="tns:GetWaybill" />
+  </wsdl:message>
+  <wsdl:message name="GetWaybillSoapOut">
+    <wsdl:part name="parameters" element="tns:GetWaybillResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveInvoiceSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveInvoice" />
+  </wsdl:message>
+  <wsdl:message name="SaveInvoiceSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveInvoiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveWaybillSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveWaybill" />
+  </wsdl:message>
+  <wsdl:message name="SaveWaybillSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveWaybillResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServicesSoap">
+    <wsdl:operation name="GetCustomerList">
+      <wsdl:input message="tns:GetCustomerListSoapIn" />
+      <wsdl:output message="tns:GetCustomerListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductList">
+      <wsdl:input message="tns:GetProductListSoapIn" />
+      <wsdl:output message="tns:GetProductListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerData">
+      <wsdl:input message="tns:GetCustomerDataSoapIn" />
+      <wsdl:output message="tns:GetCustomerDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductData">
+      <wsdl:input message="tns:GetProductDataSoapIn" />
+      <wsdl:output message="tns:GetProductDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInvoice">
+      <wsdl:input message="tns:GetInvoiceSoapIn" />
+      <wsdl:output message="tns:GetInvoiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWaybill">
+      <wsdl:input message="tns:GetWaybillSoapIn" />
+      <wsdl:output message="tns:GetWaybillSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveInvoice">
+      <wsdl:input message="tns:SaveInvoiceSoapIn" />
+      <wsdl:output message="tns:SaveInvoiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveWaybill">
+      <wsdl:input message="tns:SaveWaybillSoapIn" />
+      <wsdl:output message="tns:SaveWaybillSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServicesSoap" type="tns:ServicesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetCustomerList">
+      <soap:operation soapAction="http://www.dizaynyazilim.com.tr/GetCustomerList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductList">
+      <soap:operation soapAction="http://www.dizaynyazilim.com.tr/GetProductList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerData">
+      <soap:operation soapAction="http://www.dizaynyazilim.com.tr/GetCustomerData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductData">
+      <soap:operation soapAction="http://www.dizaynyazilim.com.tr/GetProductData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInvoice">
+      <soap:operation soapAction="http://www.dizaynyazilim.com.tr/GetInvoice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWaybill">
+      <soap:operation soapAction="http://www.dizaynyazilim.com.tr/GetWaybill" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveInvoice">
+      <soap:operation soapAction="http://www.dizaynyazilim.com.tr/SaveInvoice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveWaybill">
+      <soap:operation soapAction="http://www.dizaynyazilim.com.tr/SaveWaybill" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServicesSoap12" type="tns:ServicesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetCustomerList">
+      <soap12:operation soapAction="http://www.dizaynyazilim.com.tr/GetCustomerList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductList">
+      <soap12:operation soapAction="http://www.dizaynyazilim.com.tr/GetProductList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerData">
+      <soap12:operation soapAction="http://www.dizaynyazilim.com.tr/GetCustomerData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductData">
+      <soap12:operation soapAction="http://www.dizaynyazilim.com.tr/GetProductData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInvoice">
+      <soap12:operation soapAction="http://www.dizaynyazilim.com.tr/GetInvoice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWaybill">
+      <soap12:operation soapAction="http://www.dizaynyazilim.com.tr/GetWaybill" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveInvoice">
+      <soap12:operation soapAction="http://www.dizaynyazilim.com.tr/SaveInvoice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveWaybill">
+      <soap12:operation soapAction="http://www.dizaynyazilim.com.tr/SaveWaybill" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Services">
+    <wsdl:port name="ServicesSoap" binding="tns:ServicesSoap">
+      <soap:address location="http://88.249.254.35/onoktestservice/logoservices.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServicesSoap12" binding="tns:ServicesSoap12">
+      <soap12:address location="http://88.249.254.35/onoktestservice/logoservices.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://88.249.254.35/onoktestservice/logoservices.asmx?WSDL" uri="src/conf/xml-resources/web-services/NewWebServiceFromWSDL/wsdl/88.249.254.35/onoktestservice/logoservices.asmx.wsdl"/>
+</catalog>
