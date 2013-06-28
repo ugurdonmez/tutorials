@@ -1,0 +1,20 @@
+ 
+Given an mxn matrix, design a function that will print out the contents of the matrix in spiral format.
+
+Spiral format means for a 5x5 matrix given below:
+
+[ 1 2 3 4 5 ]
+[ 6 7 8 9 0 ]
+[ 1 2 3 4 5 ]
+[ 6 7 8 9 0 ]
+[ 1 2 3 4 5 ]
+
+path taken is:
+
+[ > > > > > ]
+[ > > > > v ]
+[ ^ ^ > v v ]
+[ ^ ^ < < v ]
+[ < < < < < ]
+
+where ">" is going right, "v" going down, "<" is going left, "^" is going up.
