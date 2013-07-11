@@ -1,0 +1,6 @@
+Write a C program that asks the user to enter exam results (0-100) 
+until a sentinel value is entered. After each exam result, 
+the corresponding letter grade is shown 
+(<50 – F, 50-69 – D, 70-79 – C, 80-89 – B, 90-100 – A). 
+At the end, the average of the exam result and the grading point average 
+(A = 4.0, B = 3.0, C = 2.0, D = 1.0, F = 0) is shown.
