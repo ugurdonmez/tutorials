@@ -1,0 +1,2 @@
+Write a program that reads an integer and determines and prints how many
+digits in the integer 7s
