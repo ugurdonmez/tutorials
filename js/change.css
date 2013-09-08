@@ -1,0 +1,5 @@
+.close { float: right; }
+.clear { clear: both; }
+.help { color: #fff; background-color: #22f; padding: 0px 5px;
+		text-align: center; cursor: pointer; }
+.tooltip { border: 1px solid #22f; padding: 2px; width: 20%; position: absolute; background: #ddd;}
