@@ -1,0 +1,6 @@
+c:\users\feramor\documents\visual studio 2012\Projects\Problem_AK\Problem_AK\bin\Debug\Problem_AK.exe.config
+c:\users\feramor\documents\visual studio 2012\Projects\Problem_AK\Problem_AK\obj\Debug\Problem_AK.csprojResolveAssemblyReference.cache
+c:\users\feramor\documents\visual studio 2012\Projects\Problem_AK\Problem_AK\bin\Debug\Problem_AK.exe
+c:\users\feramor\documents\visual studio 2012\Projects\Problem_AK\Problem_AK\bin\Debug\Problem_AK.pdb
+c:\users\feramor\documents\visual studio 2012\Projects\Problem_AK\Problem_AK\obj\Debug\Problem_AK.exe
+c:\users\feramor\documents\visual studio 2012\Projects\Problem_AK\Problem_AK\obj\Debug\Problem_AK.pdb

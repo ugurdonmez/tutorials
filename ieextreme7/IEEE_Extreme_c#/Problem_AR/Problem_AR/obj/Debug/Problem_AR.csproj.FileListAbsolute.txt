@@ -1,0 +1,6 @@
+c:\users\feramor\documents\visual studio 2012\Projects\Problem_AR\Problem_AR\bin\Debug\Problem_AR.exe.config
+c:\users\feramor\documents\visual studio 2012\Projects\Problem_AR\Problem_AR\obj\Debug\Problem_AR.csprojResolveAssemblyReference.cache
+c:\users\feramor\documents\visual studio 2012\Projects\Problem_AR\Problem_AR\bin\Debug\Problem_AR.exe
+c:\users\feramor\documents\visual studio 2012\Projects\Problem_AR\Problem_AR\bin\Debug\Problem_AR.pdb
+c:\users\feramor\documents\visual studio 2012\Projects\Problem_AR\Problem_AR\obj\Debug\Problem_AR.exe
+c:\users\feramor\documents\visual studio 2012\Projects\Problem_AR\Problem_AR\obj\Debug\Problem_AR.pdb

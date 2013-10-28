@@ -1,0 +1,6 @@
+c:\users\feramor\documents\visual studio 2012\Projects\Acadox Problem\Acadox Problem\bin\Debug\Acadox Problem.exe.config
+c:\users\feramor\documents\visual studio 2012\Projects\Acadox Problem\Acadox Problem\bin\Debug\Acadox Problem.exe
+c:\users\feramor\documents\visual studio 2012\Projects\Acadox Problem\Acadox Problem\bin\Debug\Acadox Problem.pdb
+c:\users\feramor\documents\visual studio 2012\Projects\Acadox Problem\Acadox Problem\obj\Debug\Acadox Problem.csprojResolveAssemblyReference.cache
+c:\users\feramor\documents\visual studio 2012\Projects\Acadox Problem\Acadox Problem\obj\Debug\Acadox Problem.exe
+c:\users\feramor\documents\visual studio 2012\Projects\Acadox Problem\Acadox Problem\obj\Debug\Acadox Problem.pdb

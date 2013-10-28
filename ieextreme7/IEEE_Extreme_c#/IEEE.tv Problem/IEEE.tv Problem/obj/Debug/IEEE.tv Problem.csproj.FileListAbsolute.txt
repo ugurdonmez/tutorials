@@ -1,0 +1,6 @@
+c:\users\feramor\documents\visual studio 2012\Projects\IEEE.tv Problem\IEEE.tv Problem\bin\Debug\IEEE.tv Problem.exe.config
+c:\users\feramor\documents\visual studio 2012\Projects\IEEE.tv Problem\IEEE.tv Problem\bin\Debug\IEEE.tv Problem.exe
+c:\users\feramor\documents\visual studio 2012\Projects\IEEE.tv Problem\IEEE.tv Problem\bin\Debug\IEEE.tv Problem.pdb
+c:\users\feramor\documents\visual studio 2012\Projects\IEEE.tv Problem\IEEE.tv Problem\obj\Debug\IEEE.tv Problem.csprojResolveAssemblyReference.cache
+c:\users\feramor\documents\visual studio 2012\Projects\IEEE.tv Problem\IEEE.tv Problem\obj\Debug\IEEE.tv Problem.exe
+c:\users\feramor\documents\visual studio 2012\Projects\IEEE.tv Problem\IEEE.tv Problem\obj\Debug\IEEE.tv Problem.pdb
