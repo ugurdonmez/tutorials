@@ -1,0 +1,4 @@
+./grade.sh: line 14: ./sorted.out: No such file or directory
+./grade.sh: line 18: ./sorted.out: No such file or directory
+./grade.sh: line 22: ./unsorted.out: No such file or directory
+./grade.sh: line 26: ./unsorted.out: No such file or directory
