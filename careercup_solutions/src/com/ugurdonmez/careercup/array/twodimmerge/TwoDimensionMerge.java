@@ -10,8 +10,6 @@
  */
 package com.ugurdonmez.careercup.array.twodimmerge;
 
-import java.util.ArrayList;
-
 /**
  *
  * @author uğur
@@ -19,8 +17,6 @@ import java.util.ArrayList;
 public class TwoDimensionMerge {
 
     public static void main(String asd[]) {
-
-        System.out.println("selin");
 
         String[][] input = {{"abc", "def", "gh"},
             {"f", "g"},
