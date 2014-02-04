@@ -22,7 +22,6 @@ public class CountNumber {
         
         for (int i = 0 ; i < n ; i++ ) {
             if ( !containFour(i)) {
-                System.out.println(i);
                 count++;
             }
         }
