@@ -3,7 +3,7 @@
  * Write code to return a random line from a file of unknown size 
  * and variable length rows
  */
-package com.ugurdonmez.careercup.file.randomline;
+package ugurdonmez.careercup.file.randomline;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
