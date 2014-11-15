@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package ugurdonmez.careercup.hashmap;
+package com.ugurdonmez.careercup.hashmap;
 
 import java.util.HashMap;
 
