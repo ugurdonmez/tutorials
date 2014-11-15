@@ -8,7 +8,7 @@
  * O/P -- { { "abcfqrt", "abcfxyz", "abcfpqr" ,abcgqrt and so on ..
  * 
  */
-package com.ugurdonmez.careercup.array.twodimmerge;
+package ugurdonmez.careercup.array.twodimmerge;
 
 /**
  *
