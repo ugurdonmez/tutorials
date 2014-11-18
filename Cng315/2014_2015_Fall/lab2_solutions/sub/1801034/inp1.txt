@@ -1,0 +1,8 @@
+5
+4
+3
+AAAB
+BBCC
+BCBA
+ABCA
+CCBA
