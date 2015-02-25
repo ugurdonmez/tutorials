@@ -11,6 +11,7 @@ def alpha_beta_tree(array,level,alpha,beta):
    else:
       total = 0
       for i in range(len(array)):
+         
          small = list(filter((lambda x: x < array[i]), array))
          big   = list(filter((lambda x: x > array[i]), array))
          total += (alpha_beta_tree(small, level+1, alpha, beta) + alpha_beta_tree(big, level+1, alpha, beta))
